@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+<!-- *The <form> tag is used to create an HTML form for user input.  The <input> HTML element is used to create interactive controls for web-based forms to accept data from the user. We must write inside the tag. -->
+
+<!-- The user input is most often sent to a server for processing.-->
+<!-- we will use these 5 elements inside form element = <input> ,<label>,<select>,<option>,<textarea>-->
+    
+<!-- action is backened related -->
+<form  action="">
+<!-- fir taking input -->
+<p>First Name :</p> <input type="text">
+<br>
+<br> 
+<!-- since p is block element so to avoid it we will write without <p> -->
+  first name:<input type="text">  second name :<input type="text">  
+  <br>
+  <br>
+  <!-- but its not a good pratice to write directly so we will use label -->
+   <!-- dono ek line me isliye aayega kyki <label> and <input> dono inline elements h -->
+  <label for="">first name</label><input type="text">
+  <label for="">second name</label><input type="text">
+  <br>
+  <br>
+  <!-- Here are the different input types you can use in HTML:
+
+<input type="button">
+<input type="checkbox">
+<input type="color">
+<input type="date">
+<input type="datetime-local">
+<input type="email">
+<input type="file">
+<input type="hidden">
+<input type="image">
+<input type="month">
+<input type="number">
+<input type="password">
+<input type="radio">
+<input type="range">
+<input type="reset">
+<input type="search">
+<input type="submit">
+<input type="tel">
+<input type="text">
+<input type="time">
+<input type="url">
+<input type="week">
+Tip: The default value of the type attribute is "text". -->
+ 
+<!-- *what is for attribute in label element? -->
+ <!-- The for attribute in the <label> tag and the id attribute in the <input> tag work together to create an accessible and user-friendly form.  -->
+
+ <!--agr label pe click krnge toh corresponding input field me cursor jyega  -->
+<label for="username">username</label>
+<input id="username"  type="text"/>
+<br>
+<br>
+
+<!--* using <textarea> -->
+<!-- The <textarea> element in HTML is used to create a multi-line text input field, allowing users to enter longer pieces of text such as comments, feedback, or descriptions. Unlike the <input> element with type="text", which is for single-line text input, the <textarea> can handle multiple lines of text. -->
+<label for ="oi">message</label>
+<textarea id ="oi"
+rows="10"
+column="50"
+placeholder="add comments"
+   ></textarea>
+</form>
+
+
+<!-- checkbox input type= Checkboxes allow users to select multiple options from a list. -->
+
+<form>
+    <p>Select your favorite fruits:</p>
+    
+    <label for="a">Apple</label>
+    <input type="checkbox" id="a" name="fruits" value="apple">
+    
+    <label for="b">Banana</label>
+    <input type="checkbox" id="b" name="fruits" value="banana">
+    
+    <label for="c">Cherry</label>
+    <input type="checkbox" id="c" name="fruits" value="cherry">
+    
+    
+  
+<br>
+<br>
+
+<!-- Radio buttons allow users to select only one option from a list. -->
+
+    <p>Select your gender:</p>
+    
+    <label for="a">Male</label>
+    <input type="radio" id="a" name="gender" value="male">
+    
+    <label for="b">Female</label>
+    <input type="radio" id="b" name="gender" value="female">
+    
+    <label for="c">Other</label>
+    <input type="radio" id="c" name="gender" value="other">
+
+
+  <br>
+  <br>
+
+  
+<!-- for submitting -->
+<input type ="submit" value ="submit"/>
+<!-- or -->
+ <button type="submit">submit</button>
+
+</form>
+</body>
+</html>

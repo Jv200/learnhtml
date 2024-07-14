@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture Tag</title>
+</head>
+<body>
+    <!-- The HTML <picture> element allows you to display different pictures for different devices or screen sizes. -->
+    <!-- The <picture> element contains one or more <source> elements, each referring to different images through the srcset attribute.  -->
+        <!-- Always specify an <img> element as the last child element of the <picture> element. The <img> element is used by browsers that do not support the <picture> element, or if none of the <source> tags match. -->
+
+ <!--* uses source and img element  -->
+ <!--* source and img both are empty elements -->
+ <!--* uses many attribute like srcset and type -->
+ <!--* srcset = It specifies the URL of the image used in different situations. -->
+ <!--*The type attribute  helps the browser determine if it supports the format before attempting to load it. -->
+ <!-- srcset is only designed for images not for audio and video -->
+
+ <!-- giving alternative resources  -->
+<picture>      
+    <source srcset="images.webp" type="image/webp" />
+    <source srcset="images.jpg" type="image/jpg" />
+    <source srcset="images.jpeg" type="image/jpeg" />
+    <source srcset="images.svg" type="image/svg" />
+    <img  
+      src="images.png"
+      alt="image"
+      width="500"
+      >
+</picture>
+</body>
+</html>

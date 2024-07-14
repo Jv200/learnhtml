@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Website using HTML</title>
+</head>
+<body>
+    <!-- header -->
+     <header>
+
+        <!-- this is for logo?embeded image -->
+         <!-- its a clickable logo -->
+        <a href="" target="_blank">  <img src="/images/logo.png" alt="developer logo"  width="50"> </a>
+       
+        <nav>
+            
+                <ul>
+                  
+                   <li>  <a   href="#SEC" >ABOUT </a>  </li> 
+                   <li>   <a  href="#ser" >SERVICES</a>  </li> 
+                   <li>   <a  href="#con" >CONTACT</a>  </li> 
+                </ul>
+                   
+                 <!-- <a  href="#" > go to services</a>  <br>
+                 <a   href="#" >go to contact </a>   <br>
+                 <a  href="#" >go to home</a>   -->
+    
+        </nav>
+
+     </header>
+
+     <!-- main  -->
+    <main>
+        
+            <h1> This Is a Pic of Rose I am Embeding In my First Website</h1>
+            <p>The rose is a perennial flowering plant known for its fragrant, beautiful blooms and is often considered a symbol of love and beauty. Roses come in various colors and forms, making them a popular choice for gardens and bouquets worldwide.</p>
+            
+          <a href="https://en.wikipedia.org/wiki/Rose"> <button>read more about roses </button></a>
+           <a href="https://en.wikipedia.org/wiki/Flower"> <button> read more about flowers </button></a>
+
+        <figure>
+        <img src="/images/rose.png"  alt=" image of rose"  width="200">
+        
+        </figure>
+    </main>
+  
+    <!-- about section  -->
+     <section ID="SEC">
+        <h2> About</h2>
+        <p>Jahnavi is a dedicated student specializing in Computer Science.</p>
+        <p>With a keen interest in technology and a passion for learning, Jahnavi is focused on gaining a deep understanding of various aspects of computing, from programming and algorithms to data structures and software development. As a student, Jahnavi is continuously exploring new concepts and staying updated with the latest advancements in the field, aiming to build a solid foundation for a future career in technology.</p>
+        <p> <strong>My Coding Knowlege</strong></p>
+
+         <label for="a">HTML:</label>
+          <!-- max is max progress,value is current value, content is when a sys doesnt support progress element -->
+          <progress id="a" max="100" value="70">70%</progress>
+        
+        <br>
+          <label for="b">CSS:</label>
+          <progress id="b" max="100" value="50">50%</progress>
+        <br>
+          <label for="c">CPP:</label>
+          <progress id="c" max="100" value="90">90%</progress>
+
+    </section>
+  
+   <!-- our Services -->
+    <section id="ser" >
+    <h2>Our Services</h2>
+    <figure>
+        <img src="/images/rose.png"  alt=" image of rose" width="300" >
+        <figcaption>  rose</figcaption>
+      </figure>
+    </section>
+
+    <!-- our blog  -->
+     <section>
+        <h2> our blog</h2>
+        <article>
+            The <strong><em>rose</em></strong> , often hailed as the queen of flowers, holds a special place in human history and culture. Its exquisite beauty, diverse colors, and enchanting fragrance have made it a universal symbol of love, romance, and beauty. This article explores the significance, varieties, and cultural impact of this beloved flower.  
+        </article>
+     </section>
+
+     <p>Thank You For Reading</p>
+
+
+     <!-- podcast -->
+      <section>
+        <audio  controls autoplay muted >
+            <source src="/audio/audio1.mp3" >
+            <source src="/audio/audio2.wav" >
+            your browser doesnot support audio element
+        </audio>
+      </section>
+
+    <!-- contact -->
+      <section  id="con">
+        <h2> feel free to contact us</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d933144.9172489186!2d84.63233284091447!3d23.992339796451663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f6bcbe25ac8213%3A0xa5f5cb2fb8e5c076!2sJai%20Maa%20Vaishnavi%20Sweets!5e0!3m2!1sen!2sin!4v1720287907868!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+      </section>
+      
+
+      <!-- form section -->
+      <section>
+        <form>
+          <label for="username">username</label>
+          <input id="username"  type="text">
+        <br>
+        <br>
+
+
+       <label for ="oi">message</label>
+       <textarea id ="oi"
+       rows="10"
+       column="50"
+       placeholder="add comments" ></textarea>
+
+       <br>
+       <br>
+
+       <label for ="mail">email</label>
+       <input id="mail" type="email">
+       <br>
+       <br>
+       <input type ="submit" value ="submit">
+      
+        </form>
+      </section>
+      
+    <!-- footer  -->
+      <footer>
+
+      </footer>
+
+
+
+
+</body>
+</html>

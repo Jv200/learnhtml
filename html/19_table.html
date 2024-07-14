@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Tag</title>
+</head>
+<body>
+<!-- border is an depricated attribute ,should not be used in modern websites,instead use css -->
+<table border>  <!--ek table h-->
+   <tr> <!--Usme ek row banaye-->
+      <th>subject</th>  <!--usme pehla 3 data daale mtlb 3 column-->
+      <th>marks</th>
+      <th>passed</th>
+   </tr> 
+
+   <tr>
+   <td>maths</td>  
+   <td>80</td>
+   <td>yes</td>
+   </tr>
+
+    <tr>
+        <td>physics</td>  
+        <td>70</td>
+        <td>yes</td>  
+    </tr>
+</table>
+
+<!-- <thead>,<tbody> and <tfooter> are sections which is a good practise -->
+<br>
+<br>
+
+
+<table border>
+    <thead>
+    <tr>
+        <th>USERNAME </th>
+        <th>PASSWORD </th>
+    </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>jahnavi</td>
+            <td>123</td>
+       
+        </tr>
+        <tr>
+            <td>diya</td>
+            <td>201</td>
+       
+        </tr>
+
+    </tbody>
+
+    <tfoot>
+        <tr>
+            <td>count</td>
+            <td>2</td>
+        </tr>
+        <!-- if u want a data/column to occupy more than one space use attribute called colspan and for row use rowspan -->
+        <tr>
+            <td colspan="2">count :2</td>
+    
+        </tr>
+
+    </tfoot>
+</table>
+
+<br>
+<br>
+<table border>
+    <thead>
+        <tr>
+            <th colspan="7">Time Table</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td rowspan="6">hours</td>
+            <td>mon</td>
+            <td>tue</td>
+            <td>wed</td>
+            <td>thurs</td>
+            <td>fri</td>
+            <td>sat</td>
+        </tr>
+
+        <tr>
+            <td>math</td>
+            <td>math</td>
+            <td>math</td>
+            <td>math</td>
+            <td>math</td>
+            <td>math</td>
+        </tr>
+
+        <tr>
+            <td>math</td>
+            <td>math</td>
+            <td>math</td>
+            <td>math</td>
+            <td>math</td>
+            <td>math</td>
+        </tr>
+
+        <tr>
+            <th colspan="6">lunch</th>
+        </tr>
+
+        <tr>
+            <td>math</td>
+            <td>math</td>
+            <td>math</td>
+            <td>math</td>
+            <td>math</td>
+            <td rowspan="2">games</td>
+        
+        </tr>
+
+        <tr>
+            <td>math</td>
+            <td>math</td>
+            <td>math</td>
+            <td>math</td>
+            <td>math</td>
+        </tr>
+
+    </tbody>
+
+</table>
+    
+
+</body>
+</html>
